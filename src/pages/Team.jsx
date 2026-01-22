@@ -4,7 +4,7 @@ const team = [
   {
     name: "Prasanna Kumar M",
     role: "CEO & Electrical Engineer",
-    image: "/images/emp/prasanna.jpeg",
+    image: "/images/emp/jack.jpg",
     linkedin: "https://inspireloop.onrender.com/",
     instagram: "#",
     experience: "7+ Years",
@@ -35,6 +35,14 @@ const team = [
     instagram: "#",
     experience: "20+ Years",
   },
+  {
+  name: "Gopinath ",
+  role: "Head Electrician",
+  image: "/images/emp/gopinath.jpg",
+  linkedin: "https://inspireloop.onrender.com/",
+  instagram: "#",
+  experience: "20+ Years",
+},
   {
     name: "Rakesh M",
     role: "Web dev and Graphic designer",
