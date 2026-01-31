@@ -27,13 +27,13 @@ function App() {
   return (
     <BrowserRouter>
       {/* App Wrapper */}
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col overflow-hidden">
         
         {/* Navbar (Fixed at Top) */}
         <Navbar />
 
         {/* Main Content */}
-        <main className="grow pt-16">
+        <main className="grow pt-16 overflow-hidden">
           {/* pt-16 = navbar height */}
           <Routes>
             <Route path="/" element={<Home />} />
