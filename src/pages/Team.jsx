@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa"
 const team = [
   {
     name: "Prasanna Kumar M",
-    role: "CEO & Electrical Engineer",
+    role: "CEO & MEP Engineer",
     image: "/images/emp/jack.jpg",
     linkedin: "https://www.linkedin.com/in/prasannakumar-m-a9691b36a/",
     instagram: "https://www.linkedin.com/in/prasannakumar-m-a9691b36a/",
@@ -45,7 +45,7 @@ const team = [
 },
   {
     name: "Rakesh M",
-    role: "Aspiring Manager",
+    role: "web dev & Graphic Designer",
     image: "/images/emp/rakesh.jpg",
     linkedin:"https://www.linkedin.com/in/rakesh-m-b67121217/",
     instagram: "https://inspireloop.onrender.com/",
