@@ -22,33 +22,33 @@ export default function About() {
   }, [inView])
 
   return (
-    <section className="pt-24 pb-20 bg-gray-50">
+    <section className="pt-24 pb-20 bg-[#222831]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* ================= SECTION 1 : ABOUT INTRO ================= */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <div data-aos="fade-right">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-              About <span className="text-yellow-500">MPR POWER TECH</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#EEEEEE]">
+              About <span className="text-[#00ADB5]">MPR POWER TECH</span>
             </h2>
 
-            <p className="text-gray-600 leading-7 mb-4">
+            <p className="text-[#EEEEEE]/80 leading-7 mb-4">
               MPR POWER TECH is a trusted Mechanical, Electrical & Plumbing (MEP)
               engineering company delivering reliable solutions for residential,
               commercial, and industrial projects.
             </p>
 
-            <p className="text-gray-600 leading-7 mb-4">
+            <p className="text-[#EEEEEE]/80 leading-7 mb-4">
               With over <strong>25+ years of industry expertise</strong>, we
               specialize in end-to-end electrical works — from individual homes
               to large-scale industrial power systems — executed with precision,
               safety, and statutory compliance.
             </p>
 
-            <p className="text-gray-600 leading-7">
+            <p className="text-[#EEEEEE]/80 leading-7">
               All technical activities are carried out under the direct
               supervision of a <strong>Qualified Electrical Engineer </strong>
-               with more than <strong>25 years of professional experience </strong>,
+              with more than <strong>25 years of professional experience </strong>,
               aspiring a valid <strong>Supervisory Competency Certificate </strong>
               issued by the Electrical Licensing Board.
             </p>
@@ -56,9 +56,9 @@ export default function About() {
 
           <div data-aos="fade-left">
             <img
-              src="/images/animation/transformer.jpg"
+              src="/images/img/about-1.jpg"
               alt="MEP Engineering"
-              className="rounded-xl shadow-lg w-full object-cover"
+              className="bg-gradient-to-br from-[#393E46] to-[#222831] rounded-2xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-2 border border-[#00ADB5]/20 shadow-2xl w-full object-cover "
             />
           </div>
         </div>
@@ -76,33 +76,27 @@ export default function About() {
 
         {/* ================= SECTION 3 : MISSION & VISION ================= */}
         <div className="grid md:grid-cols-2 gap-10 mb-24">
-          <div data-aos="fade-up" className="bg-white p-8 rounded-xl shadow">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Mission</h3>
-            <p className="text-gray-600 leading-7">
-              Our mission is to provide the best possible electrical and MEP
-              services to our customers by maintaining strict quality,
-              safety, and engineering standards — ensuring reliable and
-              long-lasting solutions in every project we deliver.
-            </p>
-          </div>
+          <GradientCard title="Our Mission">
+            Our mission is to provide the best possible electrical and MEP
+            services to our customers by maintaining strict quality,
+            safety, and engineering standards — ensuring reliable and
+            long-lasting solutions in every project we deliver.
+          </GradientCard>
 
-          <div data-aos="fade-up" className="bg-white p-8 rounded-xl shadow">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Vision</h3>
-            <p className="text-gray-600 leading-7">
-              Our vision is to become a recognized industry expert and a leading
-              provider of electrical and MEP solutions, known for delivering
-              safety, innovation, and engineering excellence across all sectors.
-            </p>
-          </div>
+          <GradientCard title="Our Vision">
+            Our vision is to become a recognized industry expert and a leading
+            provider of electrical and MEP solutions, known for delivering
+            safety, innovation, and engineering excellence across all sectors.
+          </GradientCard>
         </div>
 
         {/* ================= SECTION 4 : SERVICES ================= */}
         <div className="mb-24">
           <h3
             data-aos="fade-up"
-            className="text-3xl font-bold text-center mb-12 text-gray-800"
+            className="text-3xl font-bold text-center mb-12 text-[#EEEEEE]"
           >
-            Our <span className="text-yellow-500">Services</span>
+            Our <span className="text-[#00ADB5]">Services</span>
           </h3>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,9 +110,9 @@ export default function About() {
         <div>
           <h3
             data-aos="fade-up"
-            className="text-3xl font-bold text-center mb-12 text-gray-800"
+            className="text-3xl font-bold text-center mb-12 text-[#EEEEEE]"
           >
-            Our <span className="text-yellow-500">Core Values</span>
+            Our <span className="text-[#00ADB5]">Core Values</span>
           </h3>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-6 text-center">
@@ -139,37 +133,40 @@ export default function About() {
 
 function Counter({ start, icon, number, label }) {
   return (
-    <div data-aos="zoom-in" className="bg-white rounded-xl shadow p-6">
-      <div className="text-4xl text-yellow-500 mb-3">{icon}</div>
-      <h4 className="text-3xl font-bold text-gray-800">
+    <div className="bg-gradient-to-br from-[#393E46] to-[#222831] rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-6 border border-[#00ADB5]/20">
+      <div className="text-4xl text-[#00ADB5] mb-3">{icon}</div>
+      <h4 className="text-3xl font-bold text-[#EEEEEE]">
         {start ? <CountUp end={number} duration={2} /> : 0}+
       </h4>
-      <p className="text-gray-600 mt-1">{label}</p>
+      <p className="text-[#EEEEEE]/70 mt-1">{label}</p>
     </div>
   )
 }
 
 function ServiceCard({ icon, title, desc }) {
   return (
-    <div
-      data-aos="fade-up"
-      className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300"
-    >
-      <div className="text-4xl text-yellow-500 mb-4">{icon}</div>
-      <h4 className="text-lg font-semibold mb-2 text-gray-800">{title}</h4>
-      <p className="text-gray-600 text-sm leading-6">{desc}</p>
+    <div className="bg-gradient-to-br from-[#393E46] to-[#222831] rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-6 border border-[#00ADB5]/20">
+      <div className="text-4xl text-[#00ADB5] mb-4">{icon}</div>
+      <h4 className="text-lg font-semibold mb-2 text-[#EEEEEE]">{title}</h4>
+      <p className="text-[#EEEEEE]/70 text-sm leading-6">{desc}</p>
     </div>
   )
 }
 
 function ValueCard({ icon, label }) {
   return (
-    <div
-      data-aos="zoom-in"
-      className="bg-white rounded-xl shadow p-6"
-    >
-      <div className="text-3xl text-yellow-500 mb-3">{icon}</div>
-      <p className="font-semibold text-gray-700">{label}</p>
+    <div className="bg-gradient-to-br from-[#393E46] to-[#222831] rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-6 border border-[#00ADB5]/20">
+      <div className="text-3xl text-[#00ADB5] mb-3">{icon}</div>
+      <p className="font-semibold text-[#EEEEEE]">{label}</p>
+    </div>
+  )
+}
+
+function GradientCard({ title, children }) {
+  return (
+    <div className="bg-gradient-to-br from-[#393E46] to-[#222831] p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-[#00ADB5]/20">
+      <h3 className="text-2xl font-bold mb-4 text-[#00ADB5]">{title}</h3>
+      <p className="text-[#EEEEEE]/80 leading-7">{children}</p>
     </div>
   )
 }

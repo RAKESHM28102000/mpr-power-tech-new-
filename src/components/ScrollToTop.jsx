@@ -25,9 +25,9 @@ export default function ScrollToTop() {
       onClick={scrollToTop}
       className={`
         fixed bottom-6 left-6 z-50
-        bg-yellow-400 text-black
+        bg-[#00ADB5] text-[#EEEEEE]
         p-3 rounded-full shadow-lg
-        hover:bg-yellow-300 hover:scale-110
+        hover:bg-[#00949b] hover:scale-110
         transition-all duration-300
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"}
       `}

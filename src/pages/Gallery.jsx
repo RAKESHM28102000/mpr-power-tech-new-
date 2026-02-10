@@ -17,11 +17,11 @@ export default function Gallery() {
   const [selectedImg, setSelectedImg] = useState(null)
 
   return (
-    <section className="pt-24 pb-16 bg-gray-50 px-4">
+    <section className="pt-24 pb-16 bg-[#222831] px-4">
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Project <span className="text-yellow-500">Gallery</span>
+        <h2 className="text-3xl font-bold text-center mb-10 text-[#EEEEEE]">
+          Project <span className="text-[#00ADB5]">Gallery</span>
         </h2>
 
         {/* MASONRY */}
@@ -32,7 +32,7 @@ export default function Gallery() {
               src={img}
               data-aos="zoom-in"
               onClick={() => setSelectedImg(img)}
-              className="w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+              className="w-full rounded-lg cursor-pointer hover:opacity-90 transition border border-[#393E46]"
               alt="Project"
             />
           ))}
@@ -40,16 +40,16 @@ export default function Gallery() {
 
         {/* MODAL */}
         {selectedImg && (
-          <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-[#222831]/95 flex items-center justify-center z-50">
             <button
               onClick={() => setSelectedImg(null)}
-              className="absolute top-6 right-6 text-white text-3xl"
+              className="absolute top-6 right-6 text-[#EEEEEE] text-3xl"
             >
               ✕
             </button>
             <img
               src={selectedImg}
-              className="max-w-[90%] max-h-[85%] rounded-lg"
+              className="max-w-[90%] max-h-[85%] rounded-lg border border-[#393E46]"
               alt="Full View"
             />
           </div>

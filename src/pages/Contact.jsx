@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="pt-24 pb-16 bg-gray-50">
+    <section className="pt-24 pb-16 bg-[#222831] text-[#EEEEEE]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* HEADER */}
@@ -9,11 +9,11 @@ export default function Contact() {
             data-aos="fade-down"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Contact <span className="text-yellow-500">Us</span>
+            Contact <span className="text-[#00ADB5]">Us</span>
           </h2>
           <p
             data-aos="fade-up"
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-[#EEEEEE]/70 max-w-2xl mx-auto"
           >
             Get in touch with MPR POWER TECH for reliable Mechanical, Electrical &
             Plumbing engineering solutions.
@@ -26,9 +26,9 @@ export default function Contact() {
           {/* CONTACT FORM */}
           <div
             data-aos="fade-right"
-            className="bg-white p-8 rounded-xl shadow-lg"
+            className="bg-[#393E46] p-8 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-semibold mb-6">
+            <h3 className="text-2xl font-semibold mb-6 text-[#EEEEEE]">
               Send Us a Message
             </h3>
 
@@ -36,30 +36,40 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full bg-[#222831] border border-[#00ADB5]/30 p-3 rounded
+                text-[#EEEEEE] placeholder-[#EEEEEE]/50
+                focus:outline-none focus:ring-2 focus:ring-[#00ADB5]"
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full bg-[#222831] border border-[#00ADB5]/30 p-3 rounded
+                text-[#EEEEEE] placeholder-[#EEEEEE]/50
+                focus:outline-none focus:ring-2 focus:ring-[#00ADB5]"
               />
 
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full bg-[#222831] border border-[#00ADB5]/30 p-3 rounded
+                text-[#EEEEEE] placeholder-[#EEEEEE]/50
+                focus:outline-none focus:ring-2 focus:ring-[#00ADB5]"
               />
 
               <textarea
                 rows="5"
                 placeholder="Your Message"
-                className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full bg-[#222831] border border-[#00ADB5]/30 p-3 rounded
+                text-[#EEEEEE] placeholder-[#EEEEEE]/50
+                focus:outline-none focus:ring-2 focus:ring-[#00ADB5]"
               ></textarea>
 
               <button
                 type="submit"
-                className="w-full bg-black text-white py-3 rounded font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300"
+                className="w-full bg-[#00ADB5] text-[#222831] py-3 rounded font-semibold
+                hover:bg-[#EEEEEE] hover:text-[#222831]
+                transition-all duration-300"
               >
                 Submit Message
               </button>

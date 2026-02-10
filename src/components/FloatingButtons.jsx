@@ -6,14 +6,14 @@ export default function FloatingButtons() {
       <a
         href="https://wa.me/919994202384"
         target="_blank"
-        className="bg-green-500 p-4 rounded-full text-white hover:scale-110 transition"
+        className="bg-[#00ADB5] p-4 rounded-full text-[#EEEEEE] hover:scale-110 transition"
       >
         <FaWhatsapp size={22} />
       </a>
 
       <a
         href="tel:+919994202384"
-        className="bg-blue-500 p-4 rounded-full text-white hover:scale-110 transition"
+        className="bg-[#393E46] p-4 rounded-full text-[#EEEEEE] hover:scale-110 transition"
       >
         <FaPhone size={20} />
       </a>

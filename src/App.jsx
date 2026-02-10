@@ -27,7 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       {/* App Wrapper */}
-      <div className="min-h-screen flex flex-col overflow-hidden">
+      <div className="min-h-screen flex flex-col overflow-hidden bg-[#222831] text-[#EEEEEE]">
         
         {/* Navbar (Fixed at Top) */}
         <Navbar />

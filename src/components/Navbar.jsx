@@ -10,9 +10,9 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 80) {
-        setShow(false) // scroll down → hide
+        setShow(false)
       } else {
-        setShow(true) // scroll up → show
+        setShow(true)
       }
       setLastScrollY(window.scrollY)
     }
@@ -25,26 +25,26 @@ export default function Navbar() {
     `relative px-2 py-1 transition-all duration-300
      ${
        isActive
-         ? "text-yellow-400"
-         : "text-white hover:text-yellow-300"
+         ? "text-[#00ADB5]"
+         : "text-[#EEEEEE] hover:text-[#00ADB5]"
      }
      after:absolute after:left-0 after:-bottom-1
      after:h-[2px] after:w-full after:scale-x-0
-     after:bg-gradient-to-r after:from-yellow-400 after:to-orange-500
+     after:bg-[#00ADB5]
      after:transition-transform after:duration-300
      hover:after:scale-x-100
      ${isActive ? "after:scale-x-100" : ""}`
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-black/90 backdrop-blur shadow-lg
+      className={`fixed top-0 w-full z-50 bg-[#222831]/95 backdrop-blur shadow-lg
       transition-transform duration-500
       ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-around">
         
         {/* LOGO */}
-        <h1 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+        <h1 className="text-xl font-bold text-[#00ADB5]">
           MPR POWER TECH
         </h1>
 
@@ -63,15 +63,15 @@ export default function Navbar() {
           className="md:hidden relative w-8 h-8 focus:outline-none"
         >
           <span
-            className={`absolute h-0.5 w-8 bg-white transition-all duration-300
+            className={`absolute h-0.5 w-8 bg-[#EEEEEE] transition-all duration-300
               ${open ? "rotate-45 top-4" : "top-2"}`}
           />
           <span
-            className={`absolute h-0.5 w-8 bg-white transition-all duration-300
+            className={`absolute h-0.5 w-8 bg-[#EEEEEE] transition-all duration-300
               ${open ? "opacity-0" : "top-4"}`}
           />
           <span
-            className={`absolute h-0.5 w-8 bg-white transition-all duration-300
+            className={`absolute h-0.5 w-8 bg-[#EEEEEE] transition-all duration-300
               ${open ? "-rotate-45 top-4" : "top-6"}`}
           />
         </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
         className={`md:hidden overflow-hidden transition-all duration-500
         ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <div className="flex flex-col px-6 py-4 space-y-4 bg-black">
+        <div className="flex flex-col px-6 py-4 space-y-4 bg-[#222831]">
           {[
             { path: "/", label: "Home" },
             { path: "/about", label: "About" },
@@ -98,8 +98,8 @@ export default function Navbar() {
                 `text-lg transition-all duration-300
                 ${
                   isActive
-                    ? "text-yellow-400"
-                    : "text-white hover:text-yellow-300"
+                    ? "text-[#00ADB5]"
+                    : "text-[#EEEEEE] hover:text-[#00ADB5]"
                 }
                 hover:translate-x-2 active:scale-95`
               }

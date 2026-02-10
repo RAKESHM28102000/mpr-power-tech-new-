@@ -19,15 +19,15 @@ export default function GalleryCompact() {
   const [selectedImg, setSelectedImg] = useState(null)
 
   return (
-    <section className="pt-24 pb-16 bg-gray-50 px-4">
+    <section className="pt-24 pb-16 bg-[#222831] px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
         <h2
           data-aos="fade-down"
-          className="text-3xl md:text-4xl font-bold text-center mb-10"
+          className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#EEEEEE]"
         >
-          Project <span className="text-yellow-500">Gallery</span>
+          Project <span className="text-[#00ADB5]">Gallery</span>
         </h2>
 
         {/* COMPACT GRID */}
@@ -37,7 +37,7 @@ export default function GalleryCompact() {
               key={i}
               data-aos="zoom-in"
               onClick={() => setSelectedImg(img)}
-              className="relative h-44 md:h-48 rounded-lg overflow-hidden cursor-pointer group shadow"
+              className="relative h-44 md:h-48 rounded-lg overflow-hidden cursor-pointer group shadow-lg bg-[#393E46]"
             >
               <img
                 src={img}
@@ -46,8 +46,8 @@ export default function GalleryCompact() {
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span className="text-white text-sm font-semibold">
+              <div className="absolute inset-0 bg-[#00ADB5]/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span className="text-[#EEEEEE] text-sm font-semibold">
                   View Project
                 </span>
               </div>
@@ -57,10 +57,10 @@ export default function GalleryCompact() {
 
         {/* FULLSCREEN MODAL */}
         {selectedImg && (
-          <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-[#222831]/95 flex items-center justify-center z-50">
             <button
               onClick={() => setSelectedImg(null)}
-              className="absolute top-6 right-6 text-white text-3xl hover:text-yellow-400"
+              className="absolute top-6 right-6 text-[#EEEEEE] text-3xl hover:text-[#00ADB5]"
             >
               ✕
             </button>
@@ -68,7 +68,7 @@ export default function GalleryCompact() {
             <img
               src={selectedImg}
               alt="Full View"
-              className="max-w-[90%] max-h-[85%] rounded-lg shadow-2xl"
+              className="max-w-[90%] max-h-[85%] rounded-lg shadow-2xl border border-[#393E46]"
             />
           </div>
         )}
